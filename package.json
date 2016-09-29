@@ -1,0 +1,24 @@
+{
+  "name": "jsdr",
+  "version": "0.0.1",
+  "description": "the JavaScript-Defined Radio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bchociej/jsdr.git"
+  },
+  "author": "Ben Chociej <ben@chociej.io>",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/bchociej/jsdr/issues"
+  },
+  "homepage": "https://github.com/bchociej/jsdr#readme",
+  "dependencies": {
+    "dsp.js": "corbanbrook/dsp.js",
+    "highland": "caolan/highland#3.0.0-beta.3",
+    "js-rtlsdr": "^0.1.0"
+  }
+}
