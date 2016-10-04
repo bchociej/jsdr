@@ -71,8 +71,10 @@ _(getter)
 		count += item[0].length;
 		if (print) {
 			const delta = process.hrtime(start);
-			const Bps = count / (delta[0] + (delta[1] / 1e9));
-			console.log("total:   " + (Bps / (1000 * 1000)));
+			const Sps = count / (delta[0] + (delta[1] / 1e9));
+			const MSps = Math.round(100 * Sps / (1000 * 1000)) / 100;
+			console.log("\ntotal:   " + MSps + " MS/s");
+			console.log("         " + (16*MSps) + " Mbps");
 			print = false;
 
 			console.log(nums.slice(0,10));
